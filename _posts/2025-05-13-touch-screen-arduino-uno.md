@@ -10,4 +10,4 @@ mathjax: true
 author: grish-ka
 ---
 
-[](assets/img/touchscreen.mp4)
+[vid](assets/img/touchscreen.mp4)
