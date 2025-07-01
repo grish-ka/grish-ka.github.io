@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>reCAPTCHA</title>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+  <body>
+    <form id="captcha_form">
+      <!-- <label for="param">Parameter: </label>
+      <input id="param"/> -->
+      <div class="g-recaptcha" data-sitekey="6LfRmHMrAAAAAICKXE4QbkP8x72ZEH_GkGJ00WYc"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+    <script>
+      (function(){
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const continueURL = urlParams.get('continue')
+        // document.getElementById('param').value = continueURL;
+        document.getElementById('captcha_form').setAttribute('action', continueURL)
+      })();
+    </script>
+  </body>
+</html>
+
