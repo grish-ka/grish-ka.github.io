@@ -1,19 +1,13 @@
 <html>
-        <body>
-                 <script src="https://www.google.com/recaptcha/api.js"></script>
-                  <script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
-        <form id="demo-form">
-          <input type="username">
-          <input type = "username">
-          
-        </form>
-        <button class="g-recaptcha"
-        data-sitekey="reCAPTCHA_site_key"
-        data-callback='onSubmit'
-        data-action='submit'>Submit</button>
-        </body>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LfRmHMrAAAAAICKXE4QbkP8x72ZEH_GkGJ00WYc"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
 </html>
