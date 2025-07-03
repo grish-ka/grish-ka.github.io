@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 ---
 
 <html>
@@ -8,12 +8,12 @@ layout: post
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <form>
-      <input type="username"><br>
-      <input type="password">
+    <form action="http://192.168.1.18:5000">
       <div class="g-recaptcha" data-sitekey="6LfRmHMrAAAAAICKXE4QbkP8x72ZEH_GkGJ00WYc"></div>
       <br/>
-      <input type="submit" value="Submit">
+      <input type="username", id="username", name="username" required><br>
+      <input type="password", id="username", name="username" required>
+      <button type="submit">submit</button>
     </form>
   </body>
 </html>
