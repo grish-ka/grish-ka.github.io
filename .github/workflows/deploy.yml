@@ -37,6 +37,12 @@ jobs:
         run: python3 -m pip install -r ./docs/requirements.txt
       
       - name: Build Mkdocs site
-        run: mkdocs gh-deploy
+        run: mkdocs build
 
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
+          publish_dir: ./site       
       
