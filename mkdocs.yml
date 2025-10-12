@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: H20 Docs
+nav:
+  - Home: index.md
+  - H20: h20.md
+      # - API Reference: h20/api_reference.md
+theme: 
+  name: readthedocs
+  logo: logo.png
