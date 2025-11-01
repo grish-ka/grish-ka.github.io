@@ -1,1 +1,3 @@
-site
+venv
+_build
+_static
