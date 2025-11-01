@@ -1,0 +1,51 @@
+name: Deploy Sphinx to GitHub Pages
+
+on:
+  # Run this workflow every time you push to the 'source' branch
+  push:
+    branches:
+      - source
+
+# Allow this job to write to the 'main' branch
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Get a copy of your 'source' branch code
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          ref: source # Explicitly check out the source branch
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Install your project's dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Build your Sphinx HTML
+      - name: Build Sphinx
+        run: |
+          # This command assumes 'conf.py' is in your root folder
+          # If it's in 'docs/', use: sphinx-build -b html docs _build/html
+          sphinx-build -b html . _build/html
+
+      # 5. Deploy the built HTML to the 'main' branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html     # The folder with your built HTML
+          publish_branch: main           # Deploy to the 'main' branch
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          force_orphan: true           # Create a clean branch with just the HTML
