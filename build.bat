@@ -1,3 +1,1 @@
-rmdir "_build"
-
-sphinx-build -M html . _build
+sphinx-build -E -b html . _build/html

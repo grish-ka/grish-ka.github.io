@@ -65,3 +65,40 @@ And now some shell commands::
    # This will be highlighted as bash
    ls -l
    rm -rf /
+
+.. button-link:: https://example.com
+    :color: primary
+    :outline:
+
+    :octicon:`container`
+
+.. dropdown:: Github repo
+    :icon: mark-github
+    :color: dark
+
+    test
+
+or
+
+.. github::
+
+    This is a GitHub link block.
+    this is useful for linking to your project's
+    repository or specific files within it.
+    you can not customize the block here.
+
+    .. button-link:: https://example.com
+        :color: primary
+        :outline:
+
+        :octicon:`mark-github`
+
+.. github::
+
+    you can fnd the plugin source code here:
+    
+    .. button-link:: https://github.com/grish-ka/sphinxBetterBlocks
+        :color: primary
+        :outline:
+
+        :octicon:`plug`
