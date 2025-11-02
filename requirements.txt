@@ -1,3 +1,5 @@
 sphinx
 furo
 sphinx_design
+
+https://github.com/grish-ka/sphinxBetterBlocks/releases/download/v0.1.0/sphinxbetterblocks-0.1.0-py3-none-any.whl
