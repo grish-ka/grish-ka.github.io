@@ -1,3 +1,5 @@
+Rst Examples
+===============================
 Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
@@ -20,6 +22,8 @@ documentation for details.
    
    You would typically put links to other parts of
    your documentation or external resources here.
+
+   :doc:`noteBlocks`
 
 +-------+-------+-------------+
 | item  | path  | test result |
