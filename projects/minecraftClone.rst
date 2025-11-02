@@ -1,7 +1,9 @@
 Minecraft Clone
 ===============
 A simple Minecraft clone built using Python and Tkinter. This project aims to recreate the basic mechanics of Minecraft, including block placement, mining, and a simple crafting system.
+
 .. _features:
+
 Features
 --------
 - Move around a 2D world using keyboard controls.

@@ -95,7 +95,7 @@ or
 
 .. github::
 
-    you can fnd the plugin source code here:
+    you can find the plugin source code here:
     
     .. button-link:: https://github.com/grish-ka/sphinxBetterBlocks
         :color: primary
