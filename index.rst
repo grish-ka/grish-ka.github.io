@@ -8,10 +8,15 @@ Welcome to grish-ka's documentation!
     :titlesonly:
     :caption: Contents:
 
+    projects/sphinxBetterBlocks
+    projects/minecraftClone
+
+.. toctree::
+    :titlesonly:
+    :caption: Tests:
+
     test/rstExamples
     test/noteBlocks
-
-    projects/minecraftClone
 
 .. github::
    

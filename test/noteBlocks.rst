@@ -1,12 +1,13 @@
 Note Blocks
-===============================
+###########
 
 this is where every note block will be listed!
 
 .. _the-block-examples:
 
 The Blocks
--------------------------------
+**********
+
 ..
    =================================
    Standard Admonitions
@@ -78,7 +79,8 @@ The Blocks
 .. _the-code-examples:
 
 The Code
--------------------------------
+********
+
 .. dropdown:: Syntax
     :icon: code
     :color: primary
