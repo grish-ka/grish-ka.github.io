@@ -40,6 +40,7 @@ documentation for details.
    *sequence*. (And so on.)
 
 .. code-block:: python
+   :linenos:
    
    def my_function():
        """This is a Python code snippet."""
@@ -55,9 +56,9 @@ Here is some example code::
 .. highlight:: rst
 
 Now I'll show some reST code::
-   
-   .. note::
-      This will be highlighted as reST.
+
+    .. note::
+        This will be highlighted as reST.
 
 .. highlight:: bash
 

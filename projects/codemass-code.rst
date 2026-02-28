@@ -5,6 +5,8 @@ Codemass code is a Github repo for pihut's Maker advent calender.
 The current code for day 2 is this:
 
 .. code-block:: python
+    :linenos:
+
     # MIT License
 
     # Copyright (c) 2025 grish-ka
@@ -143,7 +145,7 @@ The current code for day 2 is this:
 
     the github can be found here: https://github.com/grish-ka/codemass-code
 
-    .. button-link:: 
+    .. button-link:: https://github.com/grish-ka/codemass-code
         :color: primary
         :outline:
 

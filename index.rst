@@ -9,6 +9,7 @@ Welcome to grish-ka's documentation!
     :caption: Contents:
 
     projects/sphinxBetterBlocks
+    projects/codemass-code
     projects/minecraftClone
 
 .. toctree::

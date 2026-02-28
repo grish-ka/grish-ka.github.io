@@ -27,15 +27,16 @@ Documentation
    Example usage:
    
    .. code-block:: rst
+        :linenos:
 
-      .. github::
+        .. github::
 
-         Check out the code here!
+            Check out the code here!
 
-         .. button-link:: example.com
-            :color: primary
-            :outline:
+            .. button-link:: example.com
+                :color: primary
+                :outline:
 
-            :octicon:`mark-github`
+                :octicon:`mark-github`
 
 That is it for now! More block types and features will be added in the future.

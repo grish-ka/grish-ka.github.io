@@ -8,10 +8,9 @@ this is where every note block will be listed!
 The Blocks
 **********
 
-..
-   =================================
-   Standard Admonitions
-   =================================
+..    =================================
+..    Standard Admonitions
+..    =================================
 
 .. note::
    This is a note. Use it for general information that's
@@ -52,10 +51,9 @@ The Blocks
    You can also link to external sites.
    `Google <https://google.com>`_
 
-..
-   =================================
-   Generic & Structural Admonitions
-   =================================
+..    =================================
+..    Generic & Structural Admonitions
+..    =================================
 
 .. admonition:: My Custom Title
    :class: my-custom-style
@@ -88,12 +86,12 @@ The Code
     
     .. highlight:: rst
 
-    The code::
-
-        ..
-            =================================
-            Standard Admonitions
-            =================================
+    .. code-block:: rst
+        :linenos:
+        
+        .. =================================
+        .. Standard Admonitions
+        .. =================================
 
         .. note::
             This is a note. Use it for general information that's
@@ -124,8 +122,7 @@ The Code
             future releases.
 
         .. hint::
-            You could also try using the ``--verbose`` flag to
-            see more detailed logs.
+            You could go to the command line and try using the commands
 
         .. seealso::
         
@@ -134,10 +131,9 @@ The Code
             You can also link to external sites.
             `Google <https://google.com>`_
 
-        ..
-        =================================
-        Generic & Structural Admonitions
-        =================================
+        .. =================================
+        .. Generic & Structural Admonitions
+        .. =================================
 
         .. admonition:: My Custom Title
             :class: my-custom-style
