@@ -55,3 +55,5 @@ here is an example of a ``.ib`` header structure:
         :outline:
 
         :octicon:`mark-github`
+
+v0.1.0 coming soon (as of 01/3/2026)! Maybe tonight, maybe tomorrow, maybe next week, who knows ¯\_(ツ)_/¯?
