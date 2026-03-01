@@ -12,22 +12,22 @@ Iosh
 ****
 Iosh is a shell interface for IotaOS that provides a command-line interface for interacting with the operating system. It allows users to execute commands, manage files, and perform various system operations. Iosh is designed to be simple and user-friendly, making it easy for developers and users to interact with IotaOS.
 
-.ib files
-*********
-.ib files are a custom file format used in IotaOS for storing applications. These files are designed to be lightweight and efficient, making them suitable for embedded systems with limited storage capacity. The .ib file format allows developers to easily make c (and assembly) applications for IotaOS, and provides support for features such as storing your c (or assembly) app as a .ib file, which can then be executed on the IotaOS platform. This format is optimized for the unique requirements of embedded systems, ensuring that applications can run efficiently while minimizing resource usage.
+``.ib`` files
+*************
+``.ib`` files are a custom file format used in IotaOS for storing applications. These files are designed to be lightweight and efficient, making them suitable for embedded systems with limited storage capacity. The ``.ib`` file format allows developers to easily make c (and assembly) applications for IotaOS, and provides support for features such as storing your c (or assembly) app as a ``.ib`` file, which can then be executed on the IotaOS platform. This format is optimized for the unique requirements of embedded systems, ensuring that applications can run efficiently while minimizing resource usage.
 
-.ib header
-==========
-The .ib (iota binary) header is a crucial component of the .ib file format used in IotaOS. It contains metadata about the application, such as the magic number (0x4249), code size, header size and entry point. The header also includes information about the ``ib_loader`` format version and other metadata required for proper execution. This allows the operating system to manage and execute the application effectively. The .ib header is designed to be compact and efficient, ensuring that it does not consume unnecessary resources while providing essential information for the execution of applications on the IotaOS platform.
+``.ib`` header
+==============
+The ``.ib`` (iota binary) header is a crucial component of the ``.ib`` file format used in IotaOS. It contains metadata about the application, such as the magic number (0x4249), code size, header size and entry point. The header also includes information about the ``ib_loader`` format version and other metadata required for proper execution. This allows the operating system to manage and execute the application effectively. The ``.ib`` header is designed to be compact and efficient, ensuring that it does not consume unnecessary resources while providing essential information for the execution of applications on the IotaOS platform.
 
-here is an example of a .ib header structure:
+here is an example of a ``.ib`` header structure:
 
 .. code-block:: gas
    :linenos:
-   :caption: extract from ``crt0.s``
-   
+   :caption: extract from ``crt0.s`` (0.1.0-beta.17 version (format version 1))
+   :name: ib_header_v1
 
-   /* --- IOTA BINARY (.ib) HEADER --- */
+   /* --- IOTA BINARY (``.ib``) HEADER --- */
    /* This data is at Byte 0 */
    .short 0x4249       /* magic 'IB' */
    .short 1            /* version */
@@ -36,4 +36,10 @@ here is an example of a .ib header structure:
    .long  0            /* entry point */
 
 .. version-added:: 0.1.0-beta.17
-    The ``.ib`` file format and its header structure were introduced in version 0.1.0-beta.17 of IotaOS. This addition allows developers to create and manage applications in a standardized format, enhancing the overall functionality and usability of the IotaOS platform.
+   The ``.ib`` file format and its header structure were introduced in version 0.1.0-beta.17 of IotaOS. This addition allows developers to create and manage applications in a standardized format, enhancing the overall functionality and usability of the IotaOS platform.
+
++----------------+---------------------+
+| format version | code example        |
++================+=====================+
+| 1              | :ref:`ib_header_v1` |
++----------------+---------------------+

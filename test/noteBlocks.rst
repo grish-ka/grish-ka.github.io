@@ -87,6 +87,7 @@ The Code
     .. highlight:: rst
 
     .. code-block:: rst
+        :caption: noteBlocks.rst
         :linenos:
         
         .. =================================

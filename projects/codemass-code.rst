@@ -5,6 +5,7 @@ Codemass code is a Github repo for pihut's Maker advent calender.
 The current code for day 2 is this:
 
 .. code-block:: python
+    :caption: morse_code.py
     :linenos:
 
     # MIT License

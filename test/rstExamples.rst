@@ -108,5 +108,3 @@ or
 Documentation for the plugin is here:
     
 :ref:`documentation-for-sphinxBetterBlocks`
-
-: 

@@ -27,6 +27,7 @@ Documentation
    Example usage:
    
    .. code-block:: rst
+        :caption: example.rst
         :linenos:
 
         .. github::
