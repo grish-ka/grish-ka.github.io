@@ -36,10 +36,22 @@ here is an example of a ``.ib`` header structure:
    .long  0            /* entry point */
 
 .. version-added:: 0.1.0-beta.17
-   The ``.ib`` file format and its header structure were introduced in version 0.1.0-beta.17 of IotaOS. This addition allows developers to create and manage applications in a standardized format, enhancing the overall functionality and usability of the IotaOS platform.
+   The ``.ib`` file format and its header structure were introduced in this version of IotaOS. This addition allows developers to create and manage applications in a standardized format, enhancing the overall functionality and usability of the IotaOS platform.
+
+*Table of format versions and code examples:*
 
 +----------------+---------------------+
 | format version | code example        |
 +================+=====================+
 | 1              | :ref:`ib_header_v1` |
 +----------------+---------------------+
+
+.. github::
+
+    you can find the source code for this project here:
+
+    .. button-link:: https://github.com/grish-ka/IotaOS
+        :color: primary
+        :outline:
+
+        :octicon:`mark-github`
