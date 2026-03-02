@@ -5,6 +5,13 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
+.. _rst-example-admonitions:
+
+Admonitions
+***********
+
+Admonitions are a great way to highlight important information in your documentation. You can use them to create notes, warnings, tips, and more. Here are some examples of how to use admonitions in your reST files:
+
 .. note::
    This is the content of your note. It should be indented
    to be part of the note block.
@@ -26,6 +33,35 @@ documentation for details.
 
    :doc:`noteBlocks`
 
+.. _rst_example_table:
+
+Tables
+******
+
+You can create tables using the grid table syntax. Here's an example:
+
+.. code-block:: rst
+    :linenos:
+    :caption: example.rst
+
+    +-------+-------+-------------+
+    | item  | path  | test result |
+    +=======+=======+=============+
+    | test  | test  | passed      |
+    +-------+-------+-------------+
+    | test2 | test2 | failed      |
+    +-------+-------+-------------+
+
+or if you use a extension like this
+
+.. code-block:: rst
+    :linenos:
+    :caption: example.rst
+
+    item,path,test result
+    test,test,passed
+    test2,test2,failed
+
 +-------+-------+-------------+
 | item  | path  | test result |
 +=======+=======+=============+
@@ -33,6 +69,11 @@ documentation for details.
 +-------+-------+-------------+
 | test2 | test2 | failed      |
 +-------+-------+-------------+
+
+.. _rst-example-code-blocks:
+
+Code Blocks
+***********
 
 .. py:function:: enumerate(sequence[, start=0])
 
@@ -105,6 +146,14 @@ or
 
         :octicon:`plug`
 
-Documentation for the plugin is here:
+.. seealso::
     
-:ref:`documentation-for-sphinxBetterBlocks`
+    Documentation for the plugin is here:
+        
+    :ref:`documentation-for-sphinxBetterBlocks`
+
+.. _rst_example-labels:
+
+Labels
+******
+

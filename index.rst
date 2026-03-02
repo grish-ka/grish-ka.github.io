@@ -9,6 +9,7 @@ Welcome to grish-ka's documentation!
     :caption: Contents:
 
     projects/IotaOS
+    projects/Iosh
     projects/sphinxBetterBlocks
     projects/codemass-code
     projects/minecraftClone
