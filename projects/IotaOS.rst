@@ -9,7 +9,8 @@ IotaOS is a Monolithic Kernel based operating system designed for embedded syste
    A demonstration of the IotaOS v0.1.1 shell executing a custom .ib application.
 
 Key Features
-------------
+************
+
 * **Monolithic Kernel architecture:** Allows for better modularity and separation of concerns. This design enables developers to create custom drivers and services without affecting the core kernel.
 * **Filesystem:** Includes a simple filesystem that supports basic file operations such as reading, writing, and deleting. It is designed to be lightweight and efficient, making it suitable for embedded systems with limited storage capacity.
 * **Executor:** Responsible for managing the execution of tasks and processes. It provides scheduling and context switching capabilities, allowing multiple tasks to run concurrently on the system.
@@ -59,10 +60,12 @@ Here is the set of built-in commands in Iosh:
 
 ``.ib`` files
 *************
+
 ``.ib`` files are a custom file format used in IotaOS for storing applications. These files are designed to be lightweight and efficient, making them suitable for embedded systems with limited storage capacity. The ``.ib`` file format allows developers to easily make C (and assembly) applications for IotaOS, and provides support for features such as storing your C (or assembly) app as a ``.ib`` file, which can then be executed on the IotaOS platform. This format is optimized for the unique requirements of embedded systems, ensuring that applications can run efficiently while minimizing resource usage.
 
 ``.ib`` header
 ==============
+
 The ``.ib`` (Iota Binary) header is a crucial component of the ``.ib`` file format used in IotaOS. It contains metadata about the application, such as the magic number (0x4249), code size, header size and entry point. The header also includes information about the ``ib_loader`` format version and other metadata required for proper execution. This allows the operating system to manage and execute the application effectively. The ``.ib`` header is designed to be compact and efficient, ensuring that it does not consume unnecessary resources while providing essential information for the execution of applications on the IotaOS platform.
 
 Here is an example of a ``.ib`` header structure:
