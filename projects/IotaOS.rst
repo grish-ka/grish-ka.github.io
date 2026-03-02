@@ -103,7 +103,8 @@ Here is an example of a ``.ib`` header structure:
 
 
 Call for Contributors!
-======================
+**********************
+
 IotaOS v0.1.1 is officially live! You can go to the GitHub repository and download the latest release right now. If you want to help out, here is what I currently need:
 
 * **Bug Reports:** If you discover a bug, please open an issue on the GitHub page so I can fix it as soon as possible!
