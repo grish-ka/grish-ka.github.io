@@ -16,6 +16,12 @@ Welcome to grish-ka's documentation!
 
 .. toctree::
     :titlesonly:
+    :caption: Games:
+
+    projects/dlctest
+
+.. toctree::
+    :titlesonly:
     :caption: Tests:
 
     test/rstExamples
